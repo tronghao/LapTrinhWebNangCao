@@ -31,7 +31,7 @@ public class Service : System.Web.Services.WebService
             else
                 return "Phương trình vô nghiệm";
         else
-            return "Phương trình có nghiệm x = " + (-b / a);
+            return "x = " + (-b / a);
     }
 
     [WebMethod]
@@ -50,12 +50,12 @@ public class Service : System.Web.Services.WebService
             }
             else if (delta == 0)
             {
-                kq = "Phương trình có nghiệm kép x1 = x2 = " + (-b / (2 * a));
+                kq = "x1 = x2 = " + (-b / (2 * a));
             }
             else
             {
                 delta = Math.Sqrt(delta);
-                kq = "Phương trình có hai nghiệm: ";
+                //kq = "Phương trình có hai nghiệm: ";
                 kq += "x1 = " + ((-b + delta) / (2 * a));
                 kq += " và x2 = " + ((-b - delta) / (2 * a));
             }

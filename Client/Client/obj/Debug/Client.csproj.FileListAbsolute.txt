@@ -1,0 +1,9 @@
+D:\110117051\LapTrinhWebNangCao\Client\Client\bin\Debug\Client.exe.config
+D:\110117051\LapTrinhWebNangCao\Client\Client\bin\Debug\Client.exe
+D:\110117051\LapTrinhWebNangCao\Client\Client\bin\Debug\Client.pdb
+D:\110117051\LapTrinhWebNangCao\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+D:\110117051\LapTrinhWebNangCao\Client\Client\obj\Debug\Client.Form1.resources
+D:\110117051\LapTrinhWebNangCao\Client\Client\obj\Debug\Client.Properties.Resources.resources
+D:\110117051\LapTrinhWebNangCao\Client\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+D:\110117051\LapTrinhWebNangCao\Client\Client\obj\Debug\Client.exe
+D:\110117051\LapTrinhWebNangCao\Client\Client\obj\Debug\Client.pdb
