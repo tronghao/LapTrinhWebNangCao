@@ -1,0 +1,9 @@
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\FormSVJava\FormSVJava\bin\Debug\FormSVJava.exe.config
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\FormSVJava\FormSVJava\bin\Debug\FormSVJava.exe
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\FormSVJava\FormSVJava\bin\Debug\FormSVJava.pdb
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\FormSVJava\FormSVJava\obj\Debug\FormSVJava.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\FormSVJava\FormSVJava\obj\Debug\FormSVJava.Form1.resources
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\FormSVJava\FormSVJava\obj\Debug\FormSVJava.Properties.Resources.resources
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\FormSVJava\FormSVJava\obj\Debug\FormSVJava.csproj.GenerateResource.Cache
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\FormSVJava\FormSVJava\obj\Debug\FormSVJava.exe
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\FormSVJava\FormSVJava\obj\Debug\FormSVJava.pdb

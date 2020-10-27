@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="webservice" targetNamespace="http://ws/" xmlns:tns="http://ws/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:fi="http://java.sun.com/xml/ns/wsit/2006/09/policy/fastinfoset/service" xmlns:tcp="http://java.sun.com/xml/ns/wsit/2006/09/policy/soaptcp/service" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsat="http://schemas.xmlsoap.org/ws/2004/10/wsat" 
+ >
+    <message name="hello"/>
+    <message name="helloResponse"/>
+    <message name="tong"/>
+    <message name="tongResponse"/>
+    <portType name="webservice">
+        <operation name="hello">
+            <input message="tns:hello"/>
+            <output message="tns:helloResponse"/>
+        </operation>
+        <operation name="tong">
+            <input message="tns:tong"/>
+            <output message="tns:tongResponse"/>
+        </operation>
+    </portType>
+    <binding name="webservicePortBinding" type="tns:webservice">
+        <wsp:PolicyReference URI="#webservicePortBindingPolicy"/>
+        <operation name="hello">
+            <wsp:PolicyReference URI="#webservicePortBinding_hello_Policy"/>
+            <input/>
+            <output/>
+        </operation>
+        <operation name="tong">
+            <wsp:PolicyReference URI="#webservicePortBinding_tong_Policy"/>
+            <input/>
+            <output/>
+        </operation>
+    </binding>
+    <service name="webservice">
+        <port name="webservicePort" binding="tns:webservicePortBinding"/>
+    </service>
+    <wsp:Policy wsu:Id="webservicePortBindingPolicy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <tcp:OptimizedTCPTransport enabled="true"/>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="webservicePortBinding_hello_Policy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <wsat:ATAssertion wsp:Optional="true"/>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+    <wsp:Policy wsu:Id="webservicePortBinding_tong_Policy">
+        <wsp:ExactlyOne>
+            <wsp:All>
+                <wsat:ATAssertion wsp:Optional="true"/>
+            </wsp:All>
+        </wsp:ExactlyOne>
+    </wsp:Policy>
+</definitions>

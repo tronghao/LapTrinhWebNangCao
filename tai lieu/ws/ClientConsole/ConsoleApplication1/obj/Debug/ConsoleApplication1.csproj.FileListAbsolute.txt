@@ -1,0 +1,6 @@
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\ClientConsole\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\ClientConsole\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\ClientConsole\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\ClientConsole\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\ClientConsole\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Administrator\Dropbox\My PC (DG6GI3E1598CP8F)\Desktop\ws\ClientConsole\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
