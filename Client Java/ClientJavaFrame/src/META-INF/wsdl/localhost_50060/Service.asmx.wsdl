@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="max">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="maxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="maxResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="min">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="minResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="minResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="sumResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="average">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="sum" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="number" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="averageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="averageResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="soLe">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="soLeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="soLeResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="soChan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="soChanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="soChanResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="soNguyenTo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="a" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="soNguyenToResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="soNguyenToResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="maxSoapIn">
+    <wsdl:part name="parameters" element="tns:max" />
+  </wsdl:message>
+  <wsdl:message name="maxSoapOut">
+    <wsdl:part name="parameters" element="tns:maxResponse" />
+  </wsdl:message>
+  <wsdl:message name="minSoapIn">
+    <wsdl:part name="parameters" element="tns:min" />
+  </wsdl:message>
+  <wsdl:message name="minSoapOut">
+    <wsdl:part name="parameters" element="tns:minResponse" />
+  </wsdl:message>
+  <wsdl:message name="sumSoapIn">
+    <wsdl:part name="parameters" element="tns:sum" />
+  </wsdl:message>
+  <wsdl:message name="sumSoapOut">
+    <wsdl:part name="parameters" element="tns:sumResponse" />
+  </wsdl:message>
+  <wsdl:message name="averageSoapIn">
+    <wsdl:part name="parameters" element="tns:average" />
+  </wsdl:message>
+  <wsdl:message name="averageSoapOut">
+    <wsdl:part name="parameters" element="tns:averageResponse" />
+  </wsdl:message>
+  <wsdl:message name="soLeSoapIn">
+    <wsdl:part name="parameters" element="tns:soLe" />
+  </wsdl:message>
+  <wsdl:message name="soLeSoapOut">
+    <wsdl:part name="parameters" element="tns:soLeResponse" />
+  </wsdl:message>
+  <wsdl:message name="soChanSoapIn">
+    <wsdl:part name="parameters" element="tns:soChan" />
+  </wsdl:message>
+  <wsdl:message name="soChanSoapOut">
+    <wsdl:part name="parameters" element="tns:soChanResponse" />
+  </wsdl:message>
+  <wsdl:message name="soNguyenToSoapIn">
+    <wsdl:part name="parameters" element="tns:soNguyenTo" />
+  </wsdl:message>
+  <wsdl:message name="soNguyenToSoapOut">
+    <wsdl:part name="parameters" element="tns:soNguyenToResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="max">
+      <wsdl:input message="tns:maxSoapIn" />
+      <wsdl:output message="tns:maxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="min">
+      <wsdl:input message="tns:minSoapIn" />
+      <wsdl:output message="tns:minSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sum">
+      <wsdl:input message="tns:sumSoapIn" />
+      <wsdl:output message="tns:sumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="average">
+      <wsdl:input message="tns:averageSoapIn" />
+      <wsdl:output message="tns:averageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="soLe">
+      <wsdl:input message="tns:soLeSoapIn" />
+      <wsdl:output message="tns:soLeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="soChan">
+      <wsdl:input message="tns:soChanSoapIn" />
+      <wsdl:output message="tns:soChanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="soNguyenTo">
+      <wsdl:input message="tns:soNguyenToSoapIn" />
+      <wsdl:output message="tns:soNguyenToSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="max">
+      <soap:operation soapAction="http://tempuri.org/max" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="min">
+      <soap:operation soapAction="http://tempuri.org/min" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sum">
+      <soap:operation soapAction="http://tempuri.org/sum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="average">
+      <soap:operation soapAction="http://tempuri.org/average" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="soLe">
+      <soap:operation soapAction="http://tempuri.org/soLe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="soChan">
+      <soap:operation soapAction="http://tempuri.org/soChan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="soNguyenTo">
+      <soap:operation soapAction="http://tempuri.org/soNguyenTo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="max">
+      <soap12:operation soapAction="http://tempuri.org/max" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="min">
+      <soap12:operation soapAction="http://tempuri.org/min" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sum">
+      <soap12:operation soapAction="http://tempuri.org/sum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="average">
+      <soap12:operation soapAction="http://tempuri.org/average" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="soLe">
+      <soap12:operation soapAction="http://tempuri.org/soLe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="soChan">
+      <soap12:operation soapAction="http://tempuri.org/soChan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="soNguyenTo">
+      <soap12:operation soapAction="http://tempuri.org/soNguyenTo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://localhost:50060/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://localhost:50060/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

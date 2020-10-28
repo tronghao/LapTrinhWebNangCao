@@ -1,0 +1,6 @@
+D:\110117051\LapTrinhWebNangCao\Client\ClientConsole\bin\Debug\ClientConsole.exe.config
+D:\110117051\LapTrinhWebNangCao\Client\ClientConsole\bin\Debug\ClientConsole.exe
+D:\110117051\LapTrinhWebNangCao\Client\ClientConsole\bin\Debug\ClientConsole.pdb
+D:\110117051\LapTrinhWebNangCao\Client\ClientConsole\obj\Debug\ClientConsole.csprojResolveAssemblyReference.cache
+D:\110117051\LapTrinhWebNangCao\Client\ClientConsole\obj\Debug\ClientConsole.exe
+D:\110117051\LapTrinhWebNangCao\Client\ClientConsole\obj\Debug\ClientConsole.pdb

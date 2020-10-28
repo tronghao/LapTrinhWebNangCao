@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.0 (wsit240-7e98ff4; 2017-08-03T21:19:54+0200) JAXWS-RI/2.3.0 JAXWS-API/2.3.0 JAXB-RI/2.3.0 JAXB-API/2.3.0 svn-revision#unknown. --><xs:schema xmlns:tns="http://code/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://code/">
+
+<xs:element name="uocSo" type="tns:uocSo"/>
+
+<xs:element name="uocSoChan" type="tns:uocSoChan"/>
+
+<xs:element name="uocSoChanResponse" type="tns:uocSoChanResponse"/>
+
+<xs:element name="uocSoLe" type="tns:uocSoLe"/>
+
+<xs:element name="uocSoLeResponse" type="tns:uocSoLeResponse"/>
+
+<xs:element name="uocSoResponse" type="tns:uocSoResponse"/>
+
+<xs:complexType name="uocSoChan">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uocSoChanResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uocSo">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uocSoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uocSoLe">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uocSoLeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
